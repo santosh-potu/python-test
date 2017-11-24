@@ -39,6 +39,25 @@ print('{1} and {0}'.format('eggs','spam'))
 print('This {food} is {adjective}'.format(food="Pizza",adjective="horribile"))
 print("The story of {0},{1} and {other}".format('Santosh','Uma',other="Krishna"))
 
+content = "Chess"
+print('My favorite game is {}'.format(content))
+print('My favorite game is {!r}'.format(content))
+
+import math
+print('The Actual value of PI approximately is {0:.3f}'.format(math.pi))
+
+table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 7678,'':1,'t':0}
+for name,phone in table.items():
+    print('{0:10} ==> {1:10d}'.format(name,phone))
+
+
+table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 8637678}
+print('Sjoerd: {0[Sjoerd]:d}; Jack: {0[Jack]:d}; Dcab: {0[Dcab]:d};'.format(table))
+print('Sjoerd: {Sjoerd:d}; Jack:{Jack}; Dcab:{Dcab};'.format(**table))
+
+import math
+print('The value of PI is approximately %5.3f '% math.pi)
+
 
 
 
