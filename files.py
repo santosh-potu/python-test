@@ -46,5 +46,13 @@ print('Go to the 3rd byte before the end', f.seek(-3, 2))  # Go to the 3rd byte 
 
 print(f.read(1))
 
+f1 = open('file1')
+print(list(f1))
+f1.seek(0)
+print(f1.readlines())
+f1.close()
+
+
+
 
 
